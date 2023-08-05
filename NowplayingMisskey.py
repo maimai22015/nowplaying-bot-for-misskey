@@ -55,4 +55,3 @@ class NowplayingMisskey(MyMisskey):
 
 MisskeyClient = NowplayingMisskey()
 MisskeyClient.GetScrobble()
-# MisskeyClient.Note("Test TEXT from python script.")

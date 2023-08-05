@@ -19,6 +19,7 @@ class NowplayingMisskey(MyMisskey):
             self.userid = input("Set Your Last.fm user ID: ")
             self.misskey_instance = input("Set Your Misskey Instance: ")
             self.misskey_apitoken = input("Set Your Misskey API acsess token: ")
+            self.latest = ""
             super().__init__(self.misskey_instance,self.misskey_apitoken)
     def SaveSetting(self):
         config_save = configparser.RawConfigParser()

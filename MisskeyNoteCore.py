@@ -10,7 +10,5 @@ class MyMisskey:
         self.mk.token = MISSKEY_TOKEN
     def Note(self, NoteText):
         # エスケープ
-        #new_note = self.mk.notes_create(text=NoteText)
-        # self.api.update_status(NoteText.replace('殺', '.').replace('@', '@.').replace('http', 'http.'))
-        print("Note! : "+NoteText)
+        new_note = self.mk.notes_create(text=NoteText.replace('殺', '.').replace('@', '@.').replace('http', 'http.'),visibility="home")
         return
